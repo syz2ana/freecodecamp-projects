@@ -1,9 +1,7 @@
 const CurrentDate = (props) => {
     return (
       <div>
-        { /* Change code below this line */ }
-        <p>The current date is: </p>
-        { /* Change code above this line */ }
+        <p>The current date is: {props.date} </p>
       </div>
     );
   };
@@ -15,10 +13,8 @@ const CurrentDate = (props) => {
     render() {
       return (
         <div>
-          <h3>What date is it?</h3>
-          { /* Change code below this line */ }
-          <CurrentDate />
-          { /* Change code above this line */ }
+          <h3>What date is it?</h3> 
+          <CurrentDate date={Date()}/> 
         </div>
       );
     }
