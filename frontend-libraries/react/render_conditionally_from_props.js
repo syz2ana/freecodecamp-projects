@@ -1,4 +1,5 @@
 class Results extends React.Component {
+    
     constructor(props) {
       super(props);
     }
@@ -29,6 +30,7 @@ class Results extends React.Component {
         counter: ++this.state.counter  
       });
     }
+
     render() {
       const expression = Math.random() >=.5; 
       return (
@@ -39,4 +41,5 @@ class Results extends React.Component {
         </div>
       );
     }
+
   }
