@@ -1,28 +1,28 @@
 const defaultState = {
     authenticated: false
-  };
-  
-  const authReducer = (state = defaultState, action) => {
-    switch(action.type) {
-      case "LOGIN": 
-          return {authenticated: true}
-      case "LOGOUT": 
-          return {authenticated: false}
-      default: 
-          return state;        
+};
+
+const authReducer = (state = defaultState, action) => {
+    switch (action.type) {
+        case "LOGIN":
+            return { authenticated: true }
+        case "LOGOUT":
+            return { authenticated: false }
+        default:
+            return state;
     }
-  };
-  
-  const store = Redux.createStore(authReducer);
-  
-  const loginUser = () => {
+};
+
+const store = Redux.createStore(authReducer);
+
+const loginUser = () => {
     return {
-      type: 'LOGIN'
+        type: 'LOGIN'
     }
-  };
-  
-  const logoutUser = () => {
+};
+
+const logoutUser = () => {
     return {
-      type: 'LOGOUT'
+        type: 'LOGOUT'
     }
-  };
+};
