@@ -2,7 +2,7 @@ import React from 'react';
 import { random } from 'lodash';
 import 'typeface-roboto'
 import QouteMachine from './components/QouteMachine';
-import Grid  from '@material-ui/core/Grid';
+import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core';
 
 const QOUTE_URL = "https://gist.githubusercontent.com/natebass/b0a548425a73bdf8ea5c618149fe1fce/raw/f4231cd5961f026264bb6bb3a6c41671b044f1f4/quotes.json"
@@ -25,7 +25,6 @@ class App extends React.Component {
     }
     this.assignNewQouteIndex = this.assignNewQouteIndex.bind(this);
   }
-
 
   get selectedQoute() {
 
@@ -52,12 +51,11 @@ class App extends React.Component {
     this.setState({
       selectedQouteIndex: this.genereateNewQouteIndex(),
     });
-
   }
 
   render() {
     return (
-      <Grid className={this.props.classes.container}  id="quote-box" justify='center' container>
+      <Grid className={this.props.classes.container} id="quote-box" justify='center' container>
         <Grid xs={11} lg={8} item>
           {
             this.selectedQoute ?

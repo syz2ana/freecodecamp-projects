@@ -10,17 +10,17 @@ const QouteMachine = ({ assignNewQouteIndex, selectedQoute }) => {
         <Card>
             <CardContent>
                 <Typography id="text">
-                    {selectedQoute.quote} - <span id="author">{selectedQoute.author}</span> 
+                    {selectedQoute.quote} - <span id="author">{selectedQoute.author}</span>
                 </Typography>
             </CardContent>
             <CardActions>
                 <Button id="new-quote" size='small' onClick={assignNewQouteIndex}>Next Qoute</Button>
-                 <IconButton
+                <IconButton
                     id="tweet-quote"
                     target='_blank'
-                    href={encodeURI(`https://twitter.com/intent/tweet/tweet?text=${selectedQoute.quote}`)}> 
+                    href={encodeURI(`https://twitter.com/intent/tweet/tweet?text=${selectedQoute.quote}`)}>
                     <FontAwesomeIcon size='md' icon={faTwitter}>
-                    </FontAwesomeIcon> 
+                    </FontAwesomeIcon>
                 </IconButton>
 
             </CardActions>
